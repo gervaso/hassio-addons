@@ -6,8 +6,10 @@
   "url": "https://github.com/mr-bjerre/hassio-remote-backup",
   "startup": "once",
   "boot": "manual",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "hassio_api": true,
   "hassio_role": "backup",
+  
   "map": ["backup:rw"],
   "image": "fixated/remote-backup-{arch}",
   "options": {
